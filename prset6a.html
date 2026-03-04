@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewsetport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set 6 </title>
+    <!-- practice set 
+      1.create a layout of your chooice using float
+      2.create thre same layout using flext box 
+      3.create the folowing navigation bar using flex box
+      4.create the folowing layout using flexbox
+    -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            padding: 34px;
+        }
+
+        li {
+            list-style: none;
+            display: inline;
+            padding: 0 43px;
+
+        }
+
+        header {
+            background-color: black;
+            color: white;
+
+        }
+
+        .left {
+            height: 80vh;
+            width: 40vw;
+            background-color: aqua;
+        }
+
+        .right {
+            height: 80vh;
+            width: 40vw;
+            background-color: blueviolet;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="left">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas tempore quibusdam ut ipsum molestias
+            provident saepe! Eius modi officia saepe doloribus fugiat non incidunt similique maxime rem magnam deleniti
+            tenetur earum, error exercitationem totam.
+        </div>
+        <div class="right">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia doloribus ea neque. Recusandae nobis
+            voluptatem quod! Hic enim, quo distinctio eveniet exercitationem nisi! Provident dolorem commodi quae
+            consectetur voluptatum iste recusandae nesciunt voluptatibus aliquam, atque quasi assumenda quis eveniet
+            sapiente explicabo. Laborum eos atque cum fuga qui, mollitia ipsa sint similique dolores nemo dolore!
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set 6c</title>
+    <!-- 4.create the folowing layout using flexbox -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-image: url('cat.jpg');
+            background-repeat: no-repeat;
+            text-align: right;
+            width: 950px;
+            height: 250px;
+
+
+        }
+
+        ul {
+            padding: 25px;
+        }
+
+        li {
+
+            display: inline;
+            padding: 0 20px;
+
+
+        }
+
+        header {
+            position: sticky;
+            background-color: black;
+            color: wheat;
+
+        }
+
+        .container {
+            display: flex;
+            background-color: #0b0d81;
+        }
+
+        img {
+            /* align-items: center; */
+            /* justify-content: center; */
+            height: 20vh;
+            width: 20vw;
+            padding: 0 45px;
+            border: 2px solid brown;
+        }
+        .img{
+            background-image: url('bg.jpg');
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <img src="cat.jpg">
+        <img src="cena.jpg">
+        <img src="human.jpg">
+    </div>
+    <div class="img">
+        
+    </div>
+</body>
+
+</html>

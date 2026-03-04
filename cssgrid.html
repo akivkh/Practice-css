@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CSS GRID</title>
+    <style>
+        .container {
+            display: grid;
+            background-color: chartreuse;
+            height: 56vh;
+            /* Grid row Gap */
+            /* grid-row-gap: 2px; */
+            /* grid column gap property */
+            /* grid-column-gap:9px; */
+            /* grid gap property example */
+            grid-gap: 40px 30px;
+            /* this is for grid container part */
+            /* grid tempate column for one or more column */
+            /* grid-template-columns: auto auto auto ; */
+            /* grid-template-columns: 34px 344px auto; */
+            /* grid-template-rows: 70px 150px; */
+            /* justify-content: center; */
+            /* align-content:center ; */
+
+            /* this is for grid item part */
+            grid-template-columns: auto auto auto auto;
+
+
+        }
+
+        .item {
+            background-color: aquamarine;
+            border: 2px solid red;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+
+</html>

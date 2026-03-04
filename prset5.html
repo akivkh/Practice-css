@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Set</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            font-size: 2vw;
+            padding: 0 13px;
+            /*  list style property */
+            list-style: square;
+        }
+
+        ul {
+            background-color: aqua;
+        }
+
+        header {
+            padding: 20px;
+            background-color: black;
+            color: white;
+            /* sticky navbar */
+            position: sticky;
+            top: 0;
+        }
+
+        .container {
+            min-height: 2333px;
+            background-color: blueviolet;
+            position: relative;
+            /*  the use of z-index */
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1.create a responsive navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+    </header>
+    <!-- sticky navbar -->
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at aspernatur obcaecati consequatur dicta?
+    </div>
+    <ul>
+        <li>mango</li>
+        <li>orange</li>
+        <li>peach</li>
+    </ul>
+</body>
+
+</html>

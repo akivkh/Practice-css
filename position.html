@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        li {
+            /* display: inline; */
+            list-style: square outside url('dot.png');
+    
+        }
+
+        ul {
+            background-color: aqua;
+        }
+
+        header {
+            background-color: black;
+            color: wheat;
+            height: 70px;
+            /* z-index: 1; */
+        }
+
+        p {
+            text-align: center;
+            border: 2px solid red;
+        }
+
+        .container {
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            /* place the container in cenetr */
+            margin: auto;
+            padding: 0px 34px;
+            position: relative;
+            /* z-index: 2; */
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            /* position: relative; */
+            background-color: chartreuse;
+            /* for relative posiition */
+            /* left: 680px;
+            bottom: 55px; */
+            position: absolute;
+            /* right: 0; */
+            /* position: fixed; */
+            /* position: sticky; */
+
+
+        }
+
+        .box1 {
+            height: 200px;
+            width: 200px;
+            background-color: rgb(25, 0, 255);
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda voluptatibus necessitatibus nam,
+            quam nisi eius a, distinctio at, earum laborum. Vel consequuntur est et, ipsa iste nisi itaque excepturi
+            consectetur! Quia, dicta quo!</p>
+        <div class="box">
+            i m a box
+        </div>
+        <div class="box1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores hic officiis temporibus molestias quis
+            illo. Expedita at distinctio excepturi obcaecati incidunt cumque in repudiandae recusandae?
+        </div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>orange</li>
+    </ul>
+</body>
+
+</html>

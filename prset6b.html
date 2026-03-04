@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice ste 6b</title>
+    <!-- create the folowing navigation bar using flex box -->
+     <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            padding: 34px;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            padding: 0 40px;
+        }
+        header{
+            background-color: black;
+            color: wheat;
+        }
+        .box1{
+            height: 40vh;
+            width: 20vw;
+            background-color: brown;
+        }
+        .box2{
+            height: 40vh;
+            width: 20vw;
+            background-color: blue;
+            float: left;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+     </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+            </ul>
+        </nav>
+    </header>
+       <div class="container">
+         <div class="box1">
+          div1
+
+         </div>
+         <div class="box2">
+            div2
+
+         </div>
+       </div>
+</body>
+</html>
