@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition Property</title>
+    <style>
+        .container {
+            background-color: red;
+            height: 146px;
+        }
+
+        .box {
+            border: 2px solid black;
+            display: inline-block;
+            transform-origin: 0;
+            transform: translate(134px, 56px) rotateX(45deg);
+        }
+
+        img:hover {
+            width: 56px;
+
+        }
+
+        img {
+            width: 146px;
+            height: 455px;
+            /* transition-property: width;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-timing-function: ease-in;
+             transition-delay: 1s;  */
+             /* Transition multiple property */
+            transition: width 2s ease-in 1s, height 4s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImage"
+                src="https://images.unsplash.com/photo-1772656928131-bd7592d1d119?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                width="200x120">
+            <button id="btn">Toogle</button>
+        </div>
+    </div>
+</body>
+<script>
+    myImage.style.width = "146px";
+    myImage.style.height = "16px"
+    btn.addEventListener("click", () => {
+        myImage.style.height = "455px"
+        if (myImage.style.width === '546px') {
+            myImage.style.width = '146px';
+        }
+        else if (myImage.style.width === '146px') {
+            myImage.style.width = "546px"
+
+        }
+
+    })
+</script>
+
+</html>
