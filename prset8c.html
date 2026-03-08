@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice set</title>
+    <!-- create a rotating image animation using css -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: black;
+            height: 122px;
+        }
+        main{
+            background-color: aqua;
+            height: 850px;
+        }
+        @keyframes rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+       
+        }
+         img{
+            animation: rotate 1s ease-in infinite;
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <img src="dragon.png" alt="" width="122px">
+    </main>
+</body>
+</html>
